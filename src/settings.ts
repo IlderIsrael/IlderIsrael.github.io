@@ -3,7 +3,7 @@ export const profile = {
 	title: 'Estudiante de licenciatura en Física',
 	institute: 'Universidad Nacional Autónoma de México',
 	author_name: 'Salgado, I.', // Author name to be highlighted in the papers section
-	research_areas: [ {title: 'Física', description: 'Mecánica de fluidos, sistemas dinámicos, sistemas hamiltonianos, CFD, machine learninge', field: 'physics'} ],
+	research_areas: [  ],
 		// { title: 'Physics', description: 'Brief description of the research interest', field: 'physics' },
 	],
 }
