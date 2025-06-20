@@ -1,11 +1,20 @@
 export const profile = {
 	fullName: 'Ilder Israel Salgado Marin',
-	title: '',
+	title: 'Undergraduate Physics Student',
 	institute: 'Universidad Nacional Autónoma de Mexico',
-	author_name: '', // Author name to be highlighted in the papers section
+	author_name: 'Salgado, I.', // Author name to be highlighted in the papers section
 	research_areas: [
-		// { title: 'Physics', description: 'Brief description of the research interest', field: 'physics' },
-	],
+	{
+		title: 'Mechanical Physics',
+		description: 'Experience in classical mechanics, including Newtonian dynamics and analytical formulations.',
+		field: 'mechanics',
+	},
+	{
+		title: 'Fluid Mechanics',
+		description: 'Knowledge in fluid dynamics, including laminar and turbulent flow, Navier-Stokes equations, and applications in physics.',
+		field: 'fluid-mechanics',
+	},
+],
 }
 
 // Set equal to an empty string to hide the icon that you don't want to display
