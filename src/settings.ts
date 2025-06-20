@@ -32,7 +32,7 @@ export const template = {
 }
 
 export const seo = {
-	default_title: 'Astro Academia',
-	default_description: 'Astro Academia is a template for academic websites.',
+	default_title: 'Ilder Israel',
+	default_description: 'Estudiante de licenciatura, especial interes en mecánica.',
 	default_image: '/images/astro-academia.png',
 }
