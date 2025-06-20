@@ -1,7 +1,7 @@
 export const profile = {
-	fullName: 'Ilder Israel',
+	fullName: 'Ilder Israel Salgado Marin',
 	title: '',
-	institute: '',
+	institute: 'Universidad Nacional Autónoma de Mexico',
 	author_name: '', // Author name to be highlighted in the papers section
 	research_areas: [
 		// { title: 'Physics', description: 'Brief description of the research interest', field: 'physics' },
