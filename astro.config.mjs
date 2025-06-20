@@ -12,5 +12,5 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
     integrations: [react(), tailwind(), sitemap()],
     site: 'https://ilderisrael.github.io',
-    base: 'web-pages',
+    base: 'Principal',
 });
