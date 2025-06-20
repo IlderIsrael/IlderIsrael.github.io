@@ -17,7 +17,7 @@ export const experiences = [
 
 export const education = [
 	{
-		school: '',
+		school: 'Universidad Nacional Autónoma de México',
 		time: '',
 		degree: '',
 		location: '',
