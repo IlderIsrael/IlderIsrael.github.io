@@ -1,9 +1,9 @@
 export const profile = {
-	fullName: 'Ilder Israel Salgado Marin',
-	title: 'Estudiante de licenciatura en Física',
-	institute: 'Universidad Nacional Autónoma de México',
-	author_name: 'Salgado, I.', // Author name to be highlighted in the papers section
-	research_areas: [  ],
+	fullName: 'Ilder Israel',
+	title: '',
+	institute: '',
+	author_name: '', // Author name to be highlighted in the papers section
+	research_areas: [
 		// { title: 'Physics', description: 'Brief description of the research interest', field: 'physics' },
 	],
 }
