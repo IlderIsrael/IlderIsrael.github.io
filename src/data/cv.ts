@@ -18,10 +18,10 @@ export const experiences = [
 export const education = [
 	{
 		school: 'Universidad Nacional Autónoma de México',
-		time: '',
-		degree: '',
-		location: '',
-		description: '',
+		time: '2022 - Today',
+		degree: 'Degree',
+		location: 'Mexcio city, Mexico',
+		description: 'I am currently studying for a degree in Physics at the largest and most influential university in my country, having the opportunity to work firsthand with top researchers in their field.',
 	},
 	// {
 	// 	school: 'University of Paris',
@@ -61,3 +61,9 @@ export const publications = [
 	// 	abstract: 'Early research leading to the identification of uranium’s radioactive properties.',
 	// },
 ];
+
+export const cv = {
+	name: "Curriculum Vitae",
+	file: "/CV.pdf", // ruta al archivo en la carpeta 'public'
+	description: "Aquí puedes visualizar o descargar mi currículum completo en formato PDF.",
+};
