@@ -11,7 +11,7 @@ export const profile = {
 	},
 	{
 		title: 'Fluid Mechanics',
-		description: 'Knowledge in fluid dynamics, including laminar and turbulent flow, Navier-Stokes equations, and applications in physics.',
+		description: 'Knowledge in fluid dynamics, including laminar and turbulent flow, Navier-Stokes equations, and theoretical development.',
 		field: 'fluid-mechanics',
 	},
 ],
