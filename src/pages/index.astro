@@ -9,9 +9,6 @@ import Grid from '@/components/ui/Grid.astro'
 import ArticleList from '@/components/ui/ArticleList.astro'
 
 const { fullName, title, institute, research_areas } = profile
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
@@ -28,6 +25,34 @@ const { fullName, title, institute, research_areas } = profile
 	<!-- Research Areas -->
 	<section class='py-12 border-b'>
 		<Grid gridTitle='Research Areas' gridItems={research_areas} />
+	</section>
+
+	<!-- CV Section -->
+	<section class="py-12 border-b text-center">
+		<h2 class="text-2xl font-bold mb-4">Curriculum Vitae</h2>
+		<p class="mb-6 text-gray-700">
+			Aquí puedes visualizar o descargar mi CV completo en formato PDF.
+		</p>
+
+		<div class="flex justify-center">
+			<iframe
+				src="/assets/CV.pdf"
+				width="80%"
+				height="600px"
+				class="border rounded-lg shadow-lg"
+				title="CV PDF"
+			></iframe>
+		</div>
+
+		<div class="mt-6">
+			<a
+				href="/assets/CV.pdf"
+				download
+				class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+			>
+				Descargar CV
+			</a>
+		</div>
 	</section>
 
 	<!-- Recent Publications -->
