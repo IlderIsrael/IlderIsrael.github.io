@@ -64,6 +64,6 @@ export const publications = [
 
 export const cv = {
 	name: "Curriculum Vitae",
-	file: "/CV.pdf", // ruta al archivo en la carpeta 'public'
+	file: "src/assets/CV.pdf", // ruta al archivo en la carpeta 'public'
 	description: "Aquí puedes visualizar o descargar mi currículum completo en formato PDF.",
 };
