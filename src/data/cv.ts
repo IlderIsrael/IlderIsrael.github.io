@@ -32,6 +32,12 @@ export const education = [
 	// },
 ];
 
+export const cv = {
+	name: "Curriculum Vitae",
+	file: "/public/assets/CV.pdf", // ruta al archivo en la carpeta 'public'
+	description: "Aquí puedes visualizar o descargar mi currículum completo en formato PDF.",
+};
+
 export const skills = [
 	{
 		title: '',
@@ -62,8 +68,3 @@ export const publications = [
 	// },
 ];
 
-export const cv = {
-	name: "Curriculum Vitae",
-	file: "src/assets/CV.pdf", // ruta al archivo en la carpeta 'public'
-	description: "Aquí puedes visualizar o descargar mi currículum completo en formato PDF.",
-};
