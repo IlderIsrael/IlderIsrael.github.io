@@ -3,24 +3,9 @@ import Layout from "@/layouts/Layout.astro";
 import { profile } from "@/settings";
 import BetterIcon from "@/components/ui/BetterIcon.astro";
 import List from "@/components/ui/List.astro";
-import { RESEARCH_ICONS } from "@/data/researchIcons";
+import {RESEARCH_ICONS} from "@/data/researchIcons";
 
 const { research_areas } = profile;
-
-// Definimos proyectos con PDFs e imágenes
-const currentProjects = [
-  {
-    title: "Radioactivity Studies",
-    description: "Investigation of radioactive properties in uranium minerals and isolation of new radioactive elements.",
-    pdf: "/assets/algo.pdf",
-    images: ["/assets/img1.png", "/assets/img2.jpg"]
-  },
-  {
-    title: "Measurement Techniques",
-    description: "Development of precise methods for measuring radioactive emissions and their properties.",
-    images: ["/assets/exp_setup.png"]
-  }
-];
 ---
 
 <Layout title="Research | Dr. Marie Curie">
@@ -65,31 +50,18 @@ const currentProjects = [
       }
     </div>
 
-    <h2 class="text-2xl font-bold mb-6">Current Projects</h2>
-    <div class="grid gap-8 mb-12">
+    <List listTitle="Current Projects" listItems={[
       {
-        currentProjects.map((proj) => (
-          <div class="border p-4 rounded-lg shadow">
-            <h3 class="text-xl font-semibold mb-2">{proj.title}</h3>
-            <p class="text-base mb-2">{proj.description}</p>
-
-            {Diamantes.pdf && (
-              <a href={Diamantes.pdf} target="_blank" rel="noopener noreferrer" class="text-blue-600 underline">
-                📄 View PDF
-              </a>
-            )}
-
-            {proj.images && (
-              <div class="flex gap-4 mt-3 flex-wrap">
-                {proj.images.map((img) => (
-                  <img src={img} alt="Project image" class="w-32 h-32 object-cover rounded-lg border" />
-                ))}
-              </div>
-            )}
-          </div>
-        ))
+        title: "Radioactivity Studies",
+        description: "Investigation of radioactive properties in uranium minerals and isolation of new radioactive elements.",
+        pdf: "/assets/Daimantes.pdf"
+      },
+      {
+        title: "Measurement Techniques",
+        description: "Development of precise methods for measuring radioactive emissions and their properties.",
+        pdf: "/assets/otro.pdf"
       }
-    </div>
+    ]} />
 
     <h2 class="text-2xl font-bold mb-6">Research Impact</h2>
     <p class="text-lg mb-6">
