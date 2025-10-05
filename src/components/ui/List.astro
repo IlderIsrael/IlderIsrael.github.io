@@ -4,7 +4,8 @@ interface Props {
   listItems: {
     title: string;
     description: string;
-    pdf?: string; // <-- campo opcional para PDF
+    pdf?: string;       // opcional: PDF
+    images?: string[];  // opcional: array de imágenes
   }[];
 }
 
@@ -26,6 +27,14 @@ const { listTitle, listItems } = Astro.props;
               type="application/pdf" 
               class="w-full h-96 border rounded" 
             />
+          </div>
+        )}
+
+        {item.images && (
+          <div class="flex flex-wrap gap-4 mt-3">
+            {item.images.map((img) => (
+              <img src={img} alt="Project image" class="w-40 h-40 object-cover rounded-lg border" />
+            ))}
           </div>
         )}
       </div>
