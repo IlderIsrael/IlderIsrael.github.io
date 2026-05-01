@@ -5,8 +5,13 @@ export const profile = {
 	author_name: 'Salgado, I.', // Author name to be highlighted in the papers section
 	research_areas: [
 	{
-		title: 'Mechanical Physics',
-		description: 'Experience in classical mechanics, including Newtonian dynamics and analytical formulations.',
+		title: 'Dynamical systems and complexity',
+		description: 'Knowledge in fluid dynamics, including laminar and turbulent flow, Navier-Stokes equations, and theoretical development.',
+		field: 'fluid-mechanics',
+	},
+	{
+		title: 'theoretical physics',
+		description: 'Experience in classical mechanics, including Newtonian dynamics and analytical formulations, computational simulations.',
 		field: 'mechanics',
 	},
 	{
