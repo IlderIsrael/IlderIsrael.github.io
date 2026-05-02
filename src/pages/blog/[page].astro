@@ -28,35 +28,35 @@ const { page } = Astro.props
 <Layout title='Blog'>
     <div>
 		<h1 class='text-3xl font-bold mb-8'>Blog Posts</h1>
-		<div class='grid gap-8'>
+		<div class='grid gap-8 md:grid-cols-2 lg:grid-cols-3'>
 			{
 				page.data.map(post => (
-					<article class='card bg-base-200 transition-all'>
+					<article class='card bg-base-200 transition-all hover:shadow-lg'>
 						<div class='card-body'>
-							<div class='flex justify-between items-start'>
-								<h2 class='card-title text-xl'>
-                            <a href={post.slug} class='hover:text-accent'>
-										{post.title}
-									</a>
-								</h2>
-								<div class='badge badge-accent badge-outline p-4'>
+							<div class='flex justify-between items-start mb-2'>
+								<div class='badge badge-accent badge-outline'>
 									{post.badge}
 								</div>
 							</div>
-							<time datetime={post.date} class='text-sm text-base-content/71'>
-								{new Date(post.date).toLocaleDateString('en-US', {
+							<h2 class='card-title text-lg leading-tight'>
+                            <a href={post.slug} class='hover:text-accent transition-colors'>
+										{post.title}
+									</a>
+								</h2>
+							<time datetime={post.date} class='text-xs text-base-content/60 mb-3 block'>
+								{new Date(post.date).toLocaleDateString('es-ES', {
 									year: 'numeric',
-									month: 'long',
+									month: 'short',
 									day: 'numeric',
 								})}
 							</time>
-							<p class='mt-4'>{post.excerpt}</p>
-							<div class='card-actions justify-end'>
+							<p class='text-sm text-base-content/80 line-clamp-3'>{post.excerpt}</p>
+							<div class='card-actions justify-end mt-4'>
 								<a
                             href={post.slug}
-									class='btn btn-sm btn-secondary text-secondary-content'
+									class='btn btn-xs btn-primary'
 								>
-									Read More
+									Leer más →
 								</a>
 							</div>
 						</div>

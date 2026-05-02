@@ -2,6 +2,7 @@
 import Layout from '@/layouts/Layout.astro'
 import {template} from '@/settings'
 import {getCollection, render} from 'astro:content'
+import { Image } from 'astro:assets'
 
 export async function getStaticPaths(): Promise<Array<{ params: { slug: string }, props: { post: any } }>> {
     const blogEntries = await getCollection("blog");
@@ -17,7 +18,7 @@ export async function getStaticPaths(): Promise<Array<{ params: { slug: string }
     return posts
 }
 const {post} = Astro.props;
-const { title, date, tags} = post.data; 
+const { title, date, tags, image} = post.data;
 const { Content } = await render(post);
 ---
 
@@ -29,6 +30,18 @@ const { Content } = await render(post);
 			<!-- Header section -->
 			<div class='mb-8 border-b pb-8'>
 				<h1 class='text-4xl font-bold mb-4 text-base-content'>{title}</h1>
+
+				<!-- Featured Image -->
+				{image && (
+					<div class='mb-6'>
+						<img
+							src={image}
+							alt={title}
+							class='w-full h-64 md:h-80 object-cover rounded-lg shadow-lg'
+						/>
+					</div>
+				)}
+
 				<div class='flex flex-wrap items-center gap-4 text-base-content/70'>
 					<!-- Date -->
 					<time datetime={date} class='flex items-center'>
@@ -47,7 +60,7 @@ const { Content } = await render(post);
 							></path>
 						</svg>
 						{
-							new Date(date).toLocaleDateString('en-US', {
+							new Date(date).toLocaleDateString('es-ES', {
 								year: 'numeric',
 								month: 'long',
 								day: 'numeric',
